@@ -105,4 +105,4 @@ function findLongestWord(arr) {
   return len;
 }
 
-console.log(findLongestWord(["hi", "hello"]))
+console.log(findLongestWord(["hi", "hello"]));
