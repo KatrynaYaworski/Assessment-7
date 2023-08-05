@@ -80,7 +80,18 @@ isPangram("I like cats, but not mice");
 List out the time complexity =====================>   O(n)
 List out the space complexity =====================>   O(1)
 */
-let checkForPangram = (word) => word === word.split("").reverse().join("");
+
+const isPangram = (sentence) => {
+  let lcSentance = sentence.toLowerCase();
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+  for (let i = 0; i < alphabet.length; i++) {
+      if(lcSentance.indexOf(alphabet[i]) < 0) {
+          return false;
+      }
+  }
+  return true
+}
 
 /*
 4) Longest Word
